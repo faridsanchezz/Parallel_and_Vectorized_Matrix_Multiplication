@@ -1,0 +1,778 @@
+/Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/faridsanchez/Desktop/BigData_individual/Individual Assigment 3/ParallelMatrixMultiplication/target/test-classes:/Users/faridsanchez/Desktop/BigData_individual/Individual Assigment 3/ParallelMatrixMultiplication/target/classes:/Users/faridsanchez/.m2/repository/org/openjdk/jmh/jmh-core/1.35/jmh-core-1.35.jar:/Users/faridsanchez/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/faridsanchez/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/faridsanchez/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.35/jmh-generator-annprocess-1.35.jar org.openjdk.jmh.Main bigdata.benchmarking.*
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 2, size = 100)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 13,196 ms/op
+# Warmup Iteration   2: 1,206 ms/op
+# Warmup Iteration   3: 0,778 ms/op
+Iteration   1: 0,747 ms/op
+Iteration   2: 0,769 ms/op
+Iteration   3: 0,741 ms/op
+Iteration   4: 0,782 ms/op
+Iteration   5: 0,758 ms/op
+Iteration   6: 0,426 ms/op
+Iteration   7: 0,384 ms/op
+Iteration   8: 0,389 ms/op
+Iteration   9: 0,380 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 347.7765625 KB
+0,386 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  0,576 ±(99.9%) 0,293 ms/op [Average]
+  (min, avg, max) = (0,380, 0,576, 0,782), stdev = 0,194
+  CI (99.9%): [0,283, 0,869] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 2, size = 500)
+
+# Run progress: 5,00% complete, ETA 00:01:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 42,451 ms/op
+# Warmup Iteration   2: 18,308 ms/op
+# Warmup Iteration   3: 17,394 ms/op
+Iteration   1: 17,007 ms/op
+Iteration   2: 16,335 ms/op
+Iteration   3: 16,735 ms/op
+Iteration   4: 18,080 ms/op
+Iteration   5: 19,785 ms/op
+Iteration   6: 20,507 ms/op
+Iteration   7: 17,155 ms/op
+Iteration   8: 16,947 ms/op
+Iteration   9: 16,737 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 2046.4609375 KB
+16,479 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  17,577 ±(99.9%) 2,184 ms/op [Average]
+  (min, avg, max) = (16,335, 17,577, 20,507), stdev = 1,444
+  CI (99.9%): [15,393, 19,760] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 2, size = 700)
+
+# Run progress: 10,00% complete, ETA 00:01:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 73,769 ms/op
+# Warmup Iteration   2: 51,694 ms/op
+# Warmup Iteration   3: 52,528 ms/op
+Iteration   1: 45,895 ms/op
+Iteration   2: 45,402 ms/op
+Iteration   3: 45,085 ms/op
+Iteration   4: 44,957 ms/op
+Iteration   5: 51,115 ms/op
+Iteration   6: 45,784 ms/op
+Iteration   7: 44,510 ms/op
+Iteration   8: 44,369 ms/op
+Iteration   9: 52,284 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 4096.0 KB
+44,259 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  46,366 ±(99.9%) 4,352 ms/op [Average]
+  (min, avg, max) = (44,259, 46,366, 52,284), stdev = 2,878
+  CI (99.9%): [42,014, 50,718] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 2, size = 1000)
+
+# Run progress: 15,00% complete, ETA 00:01:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 182,789 ms/op
+# Warmup Iteration   2: 144,560 ms/op
+# Warmup Iteration   3: 149,749 ms/op
+Iteration   1: 140,638 ms/op
+Iteration   2: 143,509 ms/op
+Iteration   3: 136,075 ms/op
+Iteration   4: 143,156 ms/op
+Iteration   5: 138,921 ms/op
+Iteration   6: 140,626 ms/op
+Iteration   7: 135,223 ms/op
+Iteration   8: 144,581 ms/op
+Iteration   9: 137,915 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 8226.39375 KB
+140,223 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  140,087 ±(99.9%) 4,721 ms/op [Average]
+  (min, avg, max) = (135,223, 140,087, 144,581), stdev = 3,123
+  CI (99.9%): [135,366, 144,808] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 3, size = 100)
+
+# Run progress: 20,00% complete, ETA 00:01:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 18,067 ms/op
+# Warmup Iteration   2: 0,961 ms/op
+# Warmup Iteration   3: 0,716 ms/op
+Iteration   1: 0,799 ms/op
+Iteration   2: 0,761 ms/op
+Iteration   3: 0,768 ms/op
+Iteration   4: 0,762 ms/op
+Iteration   5: 0,772 ms/op
+Iteration   6: 0,699 ms/op
+Iteration   7: 0,390 ms/op
+Iteration   8: 0,513 ms/op
+Iteration   9: 0,432 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 353.95 KB
+0,693 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  0,659 ±(99.9%) 0,233 ms/op [Average]
+  (min, avg, max) = (0,390, 0,659, 0,799), stdev = 0,154
+  CI (99.9%): [0,426, 0,891] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 3, size = 500)
+
+# Run progress: 25,00% complete, ETA 00:01:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 46,703 ms/op
+# Warmup Iteration   2: 16,748 ms/op
+# Warmup Iteration   3: 11,697 ms/op
+Iteration   1: 11,883 ms/op
+Iteration   2: 11,663 ms/op
+Iteration   3: 11,845 ms/op
+Iteration   4: 12,361 ms/op
+Iteration   5: 12,312 ms/op
+Iteration   6: 20,684 ms/op
+Iteration   7: 19,072 ms/op
+Iteration   8: 14,704 ms/op
+Iteration   9: 16,290 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 2046.15546875 KB
+12,002 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  14,282 ±(99.9%) 5,026 ms/op [Average]
+  (min, avg, max) = (11,663, 14,282, 20,684), stdev = 3,324
+  CI (99.9%): [9,256, 19,308] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 3, size = 700)
+
+# Run progress: 30,00% complete, ETA 00:01:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 75,863 ms/op
+# Warmup Iteration   2: 34,737 ms/op
+# Warmup Iteration   3: 31,262 ms/op
+Iteration   1: 42,807 ms/op
+Iteration   2: 33,124 ms/op
+Iteration   3: 32,155 ms/op
+Iteration   4: 32,184 ms/op
+Iteration   5: 35,332 ms/op
+Iteration   6: 34,654 ms/op
+Iteration   7: 49,486 ms/op
+Iteration   8: 33,211 ms/op
+Iteration   9: 30,753 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 4096.0 KB
+30,349 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  35,406 ±(99.9%) 9,179 ms/op [Average]
+  (min, avg, max) = (30,349, 35,406, 49,486), stdev = 6,072
+  CI (99.9%): [26,226, 44,585] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 3, size = 1000)
+
+# Run progress: 35,00% complete, ETA 00:01:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 134,897 ms/op
+# Warmup Iteration   2: 103,085 ms/op
+# Warmup Iteration   3: 90,987 ms/op
+Iteration   1: 90,067 ms/op
+Iteration   2: 116,214 ms/op
+Iteration   3: 109,189 ms/op
+Iteration   4: 103,108 ms/op
+Iteration   5: 107,090 ms/op
+Iteration   6: 95,919 ms/op
+Iteration   7: 111,210 ms/op
+Iteration   8: 104,111 ms/op
+Iteration   9: 91,876 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 8072.45234375 KB
+88,471 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  101,726 ±(99.9%) 14,556 ms/op [Average]
+  (min, avg, max) = (88,471, 101,726, 116,214), stdev = 9,628
+  CI (99.9%): [87,170, 116,282] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 4, size = 100)
+
+# Run progress: 40,00% complete, ETA 00:01:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 28,187 ms/op
+# Warmup Iteration   2: 0,969 ms/op
+# Warmup Iteration   3: 0,812 ms/op
+Iteration   1: 0,804 ms/op
+Iteration   2: 0,842 ms/op
+Iteration   3: 0,819 ms/op
+Iteration   4: 0,740 ms/op
+Iteration   5: 0,388 ms/op
+Iteration   6: 0,429 ms/op
+Iteration   7: 0,350 ms/op
+Iteration   8: 0,352 ms/op
+Iteration   9: 0,364 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 441.8703125 KB
+0,421 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  0,551 ±(99.9%) 0,330 ms/op [Average]
+  (min, avg, max) = (0,350, 0,551, 0,842), stdev = 0,219
+  CI (99.9%): [0,221, 0,881] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 4, size = 500)
+
+# Run progress: 45,00% complete, ETA 00:01:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 52,287 ms/op
+# Warmup Iteration   2: 19,626 ms/op
+# Warmup Iteration   3: 11,869 ms/op
+Iteration   1: 12,851 ms/op
+Iteration   2: 12,051 ms/op
+Iteration   3: 12,204 ms/op
+Iteration   4: 12,804 ms/op
+Iteration   5: 12,334 ms/op
+Iteration   6: 14,021 ms/op
+Iteration   7: 18,802 ms/op
+Iteration   8: 16,949 ms/op
+Iteration   9: 13,474 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 2256.6859375 KB
+13,297 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  13,879 ±(99.9%) 3,378 ms/op [Average]
+  (min, avg, max) = (12,051, 13,879, 18,802), stdev = 2,234
+  CI (99.9%): [10,501, 17,257] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 4, size = 700)
+
+# Run progress: 50,00% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 76,763 ms/op
+# Warmup Iteration   2: 35,315 ms/op
+# Warmup Iteration   3: 33,974 ms/op
+Iteration   1: 41,487 ms/op
+Iteration   2: 34,291 ms/op
+Iteration   3: 33,946 ms/op
+Iteration   4: 32,350 ms/op
+Iteration   5: 34,869 ms/op
+Iteration   6: 32,968 ms/op
+Iteration   7: 50,483 ms/op
+Iteration   8: 33,772 ms/op
+Iteration   9: 32,955 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 4096.0 KB
+32,493 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  35,962 ±(99.9%) 8,690 ms/op [Average]
+  (min, avg, max) = (32,350, 35,962, 50,483), stdev = 5,748
+  CI (99.9%): [27,272, 44,651] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 4, size = 1000)
+
+# Run progress: 55,00% complete, ETA 00:00:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 169,325 ms/op
+# Warmup Iteration   2: 103,938 ms/op
+# Warmup Iteration   3: 106,705 ms/op
+Iteration   1: 100,297 ms/op
+Iteration   2: 110,231 ms/op
+Iteration   3: 106,970 ms/op
+Iteration   4: 111,058 ms/op
+Iteration   5: 111,685 ms/op
+Iteration   6: 108,740 ms/op
+Iteration   7: 104,486 ms/op
+Iteration   8: 108,175 ms/op
+Iteration   9: 109,530 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 8379.003125 KB
+108,048 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  107,922 ±(99.9%) 5,127 ms/op [Average]
+  (min, avg, max) = (100,297, 107,922, 111,685), stdev = 3,391
+  CI (99.9%): [102,795, 113,049] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 6, size = 100)
+
+# Run progress: 60,00% complete, ETA 00:00:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 18,094 ms/op
+# Warmup Iteration   2: 0,930 ms/op
+# Warmup Iteration   3: 0,781 ms/op
+Iteration   1: 0,791 ms/op
+Iteration   2: 0,823 ms/op
+Iteration   3: 0,789 ms/op
+Iteration   4: 0,796 ms/op
+Iteration   5: 0,773 ms/op
+Iteration   6: 0,428 ms/op
+Iteration   7: 0,366 ms/op
+Iteration   8: 0,327 ms/op
+Iteration   9: 0,340 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 473.825 KB
+0,325 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  0,576 ±(99.9%) 0,351 ms/op [Average]
+  (min, avg, max) = (0,325, 0,576, 0,823), stdev = 0,232
+  CI (99.9%): [0,225, 0,927] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 6, size = 500)
+
+# Run progress: 65,00% complete, ETA 00:00:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 44,933 ms/op
+# Warmup Iteration   2: 22,090 ms/op
+# Warmup Iteration   3: 12,060 ms/op
+Iteration   1: 12,649 ms/op
+Iteration   2: 11,945 ms/op
+Iteration   3: 12,259 ms/op
+Iteration   4: 11,866 ms/op
+Iteration   5: 14,753 ms/op
+Iteration   6: 19,248 ms/op
+Iteration   7: 23,666 ms/op
+Iteration   8: 13,026 ms/op
+Iteration   9: 15,253 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 2305.875 KB
+11,897 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  14,656 ±(99.9%) 5,916 ms/op [Average]
+  (min, avg, max) = (11,866, 14,656, 23,666), stdev = 3,913
+  CI (99.9%): [8,740, 20,572] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 6, size = 700)
+
+# Run progress: 70,00% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 78,517 ms/op
+# Warmup Iteration   2: 34,582 ms/op
+# Warmup Iteration   3: 32,471 ms/op
+Iteration   1: 41,517 ms/op
+Iteration   2: 32,383 ms/op
+Iteration   3: 33,105 ms/op
+Iteration   4: 32,172 ms/op
+Iteration   5: 32,444 ms/op
+Iteration   6: 35,920 ms/op
+Iteration   7: 45,435 ms/op
+Iteration   8: 37,461 ms/op
+Iteration   9: 31,852 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 4079.2390625 KB
+32,287 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  35,458 ±(99.9%) 7,099 ms/op [Average]
+  (min, avg, max) = (31,852, 35,458, 45,435), stdev = 4,695
+  CI (99.9%): [28,359, 42,556] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 6, size = 1000)
+
+# Run progress: 75,00% complete, ETA 00:00:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 180,071 ms/op
+# Warmup Iteration   2: 107,732 ms/op
+# Warmup Iteration   3: 115,736 ms/op
+Iteration   1: 109,845 ms/op
+Iteration   2: 114,485 ms/op
+Iteration   3: 105,273 ms/op
+Iteration   4: 112,600 ms/op
+Iteration   5: 104,243 ms/op
+Iteration   6: 111,127 ms/op
+Iteration   7: 107,072 ms/op
+Iteration   8: 109,653 ms/op
+Iteration   9: 103,104 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 8418.99140625 KB
+105,618 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  108,302 ±(99.9%) 5,752 ms/op [Average]
+  (min, avg, max) = (103,104, 108,302, 114,485), stdev = 3,805
+  CI (99.9%): [102,550, 114,054] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 8, size = 100)
+
+# Run progress: 80,00% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 28,971 ms/op
+# Warmup Iteration   2: 1,008 ms/op
+# Warmup Iteration   3: 0,815 ms/op
+Iteration   1: 0,821 ms/op
+Iteration   2: 0,779 ms/op
+Iteration   3: 0,749 ms/op
+Iteration   4: 0,895 ms/op
+Iteration   5: 0,818 ms/op
+Iteration   6: 0,729 ms/op
+Iteration   7: 0,428 ms/op
+Iteration   8: 0,476 ms/op
+Iteration   9: 0,321 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 431.3796875 KB
+0,317 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  0,633 ±(99.9%) 0,336 ms/op [Average]
+  (min, avg, max) = (0,317, 0,633, 0,895), stdev = 0,223
+  CI (99.9%): [0,297, 0,970] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 8, size = 500)
+
+# Run progress: 85,00% complete, ETA 00:00:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 50,439 ms/op
+# Warmup Iteration   2: 21,169 ms/op
+# Warmup Iteration   3: 21,234 ms/op
+Iteration   1: 15,715 ms/op
+Iteration   2: 13,416 ms/op
+Iteration   3: 13,143 ms/op
+Iteration   4: 18,556 ms/op
+Iteration   5: 19,425 ms/op
+Iteration   6: 15,319 ms/op
+Iteration   7: 13,038 ms/op
+Iteration   8: 12,755 ms/op
+Iteration   9: 13,876 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 2055.55546875 KB
+12,026 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  14,727 ±(99.9%) 3,807 ms/op [Average]
+  (min, avg, max) = (12,026, 14,727, 19,425), stdev = 2,518
+  CI (99.9%): [10,920, 18,533] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 8, size = 700)
+
+# Run progress: 90,00% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 74,599 ms/op
+# Warmup Iteration   2: 45,256 ms/op
+# Warmup Iteration   3: 32,969 ms/op
+Iteration   1: 36,618 ms/op
+Iteration   2: 34,650 ms/op
+Iteration   3: 33,800 ms/op
+Iteration   4: 33,241 ms/op
+Iteration   5: 31,156 ms/op
+Iteration   6: 48,073 ms/op
+Iteration   7: 35,990 ms/op
+Iteration   8: 32,409 ms/op
+Iteration   9: 30,772 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 4058.5203125 KB
+39,937 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  35,665 ±(99.9%) 7,782 ms/op [Average]
+  (min, avg, max) = (30,772, 35,665, 48,073), stdev = 5,147
+  CI (99.9%): [27,882, 43,447] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: /Users/faridsanchez/Library/Java/JavaVirtualMachines/corretto-17.0.8.1/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49503:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bigdata.benchmarking.VectorizedMatrixMultiplication
+# Parameters: (numThread = 8, size = 1000)
+
+# Run progress: 95,00% complete, ETA 00:00:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 156,200 ms/op
+# Warmup Iteration   2: 109,403 ms/op
+# Warmup Iteration   3: 110,588 ms/op
+Iteration   1: 106,197 ms/op
+Iteration   2: 113,959 ms/op
+Iteration   3: 99,242 ms/op
+Iteration   4: 109,262 ms/op
+Iteration   5: 99,928 ms/op
+Iteration   6: 98,382 ms/op
+Iteration   7: 97,803 ms/op
+Iteration   8: 93,130 ms/op
+Iteration   9: 105,360 ms/op
+Iteration  10: Average memory usage of the last 10 iterations: 8370.02265625 KB
+114,853 ms/op
+
+
+Result "bigdata.benchmarking.VectorizedMatrixMultiplication":
+  103,812 ±(99.9%) 11,022 ms/op [Average]
+  (min, avg, max) = (93,130, 103,812, 114,853), stdev = 7,290
+  CI (99.9%): [92,790, 114,834] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:06
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                       (numThread)  (size)  Mode  Cnt    Score    Error  Units
+VectorizedMatrixMultiplication            2     100  avgt   10    0,576 ±  0,293  ms/op
+VectorizedMatrixMultiplication            2     500  avgt   10   17,577 ±  2,184  ms/op
+VectorizedMatrixMultiplication            2     700  avgt   10   46,366 ±  4,352  ms/op
+VectorizedMatrixMultiplication            2    1000  avgt   10  140,087 ±  4,721  ms/op
+VectorizedMatrixMultiplication            3     100  avgt   10    0,659 ±  0,233  ms/op
+VectorizedMatrixMultiplication            3     500  avgt   10   14,282 ±  5,026  ms/op
+VectorizedMatrixMultiplication            3     700  avgt   10   35,406 ±  9,179  ms/op
+VectorizedMatrixMultiplication            3    1000  avgt   10  101,726 ± 14,556  ms/op
+VectorizedMatrixMultiplication            4     100  avgt   10    0,551 ±  0,330  ms/op
+VectorizedMatrixMultiplication            4     500  avgt   10   13,879 ±  3,378  ms/op
+VectorizedMatrixMultiplication            4     700  avgt   10   35,962 ±  8,690  ms/op
+VectorizedMatrixMultiplication            4    1000  avgt   10  107,922 ±  5,127  ms/op
+VectorizedMatrixMultiplication            6     100  avgt   10    0,576 ±  0,351  ms/op
+VectorizedMatrixMultiplication            6     500  avgt   10   14,656 ±  5,916  ms/op
+VectorizedMatrixMultiplication            6     700  avgt   10   35,458 ±  7,099  ms/op
+VectorizedMatrixMultiplication            6    1000  avgt   10  108,302 ±  5,752  ms/op
+VectorizedMatrixMultiplication            8     100  avgt   10    0,633 ±  0,336  ms/op
+VectorizedMatrixMultiplication            8     500  avgt   10   14,727 ±  3,807  ms/op
+VectorizedMatrixMultiplication            8     700  avgt   10   35,665 ±  7,782  ms/op
+VectorizedMatrixMultiplication            8    1000  avgt   10  103,812 ± 11,022  ms/op
+
+Process finished with exit code 0

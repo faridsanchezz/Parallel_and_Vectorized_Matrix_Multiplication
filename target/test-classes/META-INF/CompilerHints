@@ -1,0 +1,10 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,bigdata/benchmarking$BenchmarkState.setupIteration
+inline,bigdata/benchmarking$BenchmarkState.setupTrial
+inline,bigdata/benchmarking$BenchmarkState.tearDownIteration
+inline,bigdata/benchmarking$BenchmarkState.tearDownTrial
+inline,bigdata/benchmarking.VectorizedMatrixMultiplication
